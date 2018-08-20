@@ -1,5 +1,5 @@
 
-<h1>My name is <%= @name %> and I am <%= @age %> years old</h1>
+<h1>My name is <%= @name %> and I love cats
 
 
 <div style='border: 3px dashed red'>
@@ -7,3 +7,21 @@
 </div>
 
 
+<form action="/named-cat">
+    <input type="text" name="name">
+    <input type="submit" name="Submit">
+</form>
+  
+<%#   
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name">
+  </div>
+  <div>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_mail">
+  </div>
+  <div>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div> %>
