@@ -12,10 +12,12 @@ get('/random-cat') {
   @name = ["Amigo", "Oscar", "Viking"].sample
   erb :index
   }
-  get('/named-cat') {
-
-    p params
-    @name = params[:name]
-    @age = params[:age]
-    erb :index
-    }
+post('/named-cat') {
+  p params
+  @name = params[:name]
+  @age = params[:age]
+  erb :index
+  }
+get('/cat-naming-form') {
+  erb :cat_naming
+}
