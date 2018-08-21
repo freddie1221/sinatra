@@ -15,7 +15,6 @@ get('/random-cat') {
 post('/named-cat') {
   p params
   @name = params[:name]
-  @age = params[:age]
   erb :index
   }
 get('/cat-naming-form') {
